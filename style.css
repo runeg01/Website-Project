@@ -1,0 +1,14 @@
+body{
+    background-color: #fff;
+    padding: 0px;
+    font-family: Arial;
+}
+#main-content{
+    margin-top: 100px;
+}
+#navbarSupportedContent{
+    color:white;
+}
+.navbar-nav li a:hover{
+    color:orange !important;
+}
