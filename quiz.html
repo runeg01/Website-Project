@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <title>Quiz Demo</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vendor/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!--JS-->
+    <script src="vendor/JS/jquery-3.3.1.js"></script>
+    <script src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+    <!--Angular-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+</head>
+
+<body>
+   <div class="container">
+      <h1>Demo</h1>
+    <div class="form-group">
+ <input type="checkbox" name="skill" value="A"> A
+        </br>
+<input type="checkbox" name="skill" value="B"> B
+       </br>
+<input type="checkbox" name="skill" value="C"> C
+</div>
+     <div class="form-group">
+ <input type="checkbox" name="skill" value="A"> A
+        </br>
+<input type="checkbox" name="skill" value="B"> B
+       </br>
+<input type="checkbox" name="skill" value="C"> C
+</div>
+  <div class="form-group">
+ <input type="checkbox" name="skill" value="A"> A
+        </br>
+<input type="checkbox" name="skill" value="B"> B
+       </br>
+<input type="checkbox" name="skill" value="C"> C
+</div>
+  <div class="form-group">
+ <input type="checkbox" name="skill" value="A"> A
+        </br>
+<input type="checkbox" name="skill" value="B"> B
+       </br>
+<input type="checkbox" name="skill" value="C"> C
+</div>
+  <div class="form-group">
+ <input type="checkbox" name="skill" value="A"> A
+        </br>
+<input type="checkbox" name="skill" value="B"> B
+       </br>
+<input type="checkbox" name="skill" value="C"> C
+</div>
+   <button type="button" class="btn btn-primary" onclick="submit()" id="submit">Submit</button>
+   <button type="button" class="btn btn-primary" onclick="viewResults()" id="answers" data-toggle="modal" data-target="#exampleModal">View Answers</button>
+   </div>
+   
+   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Answers</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="answer1"></p>
+        <p id="answer2"></p>
+        <p id="answer3"></p>
+        <p id="answer4"></p>
+        <p id="answer5"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+</body>
+<footer>
+     <script src="js/quiz.js"></script>
+</footer>
+</html>
