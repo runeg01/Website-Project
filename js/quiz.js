@@ -16,9 +16,9 @@ $("#submit").click(function () {
     $("#answers").show();
 })
 correctArr = ["C", "C", "C", "C", "C"]
-
+$("#results").hide();
 function viewResults() {
-
+    $("#results").show();
     $("#answer1").append(answerArr[0])
     $("#answer2").append(answerArr[1])
     $("#answer3").append(answerArr[2])

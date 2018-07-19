@@ -20,7 +20,13 @@
 
 <body>
     <div class="container">
-        <h1>Demo</h1>
+      <div class="row">
+          
+     
+          
+   
+       <div class="form-group col-6">
+            <h1>Demo</h1>
         <div class="form-group">
             <input type="checkbox" name="skill" value="A"> A
             </br>
@@ -56,67 +62,44 @@
             </br>
             <input type="checkbox" name="skill" value="C"> C
         </div>
-        <button type="button" class="btn btn-primary" onclick="submit()" id="submit">Submit</button>
-        <button type="button" class="btn btn-primary" onclick="viewResults()" id="answers" data-toggle="modal" data-target="#exampleModal">View Answers</button>
+       </div>
+<div class="form-group col-2 mt-4 ">
+       
+                    <div class="card" id ="results" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Your Results</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">how well did you do?</h6>
+                            <p class="card-text" id="perc"></p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                
+</div>
+       </div>
+       
+        <div class="row">
+            <div class="inline">
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary" onclick="submit()" id="submit">Submit</button>
+                    <button type="button" class="btn btn-primary" onclick="viewResults()" id="answers">View Answers</button>
+                        </div>
+                </div>
+        
+             
+       
+               
+
+        
+
+
+
+        </div>
+
+
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Answers</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                </div>
-                <div class="modal-body">
 
-                    <div class="row">
-
-                        <div class="inline ml-3 text-center">
-                            <div class="form-group">
-                                <h4 class=m l-5>Your Answers:</h4>
-                            </div>
-                            </br>
-                            <div class="form-group">
-                                <p id="answer1"></p>
-                                <p id="answer2"></p>
-                                <p id="answer3"></p>
-                                <p id="answer4"></p>
-                                <p id="answer5"></p>
-                            </div>
-                        </div>
-
-
-                        <div class="inline ml-5 text-center">
-                            <div class="form-group">
-                                <h4>Correct Answers:</h4>
-                            </div>
-                            </br>
-                            <div class="form-group" id="correct">
-
-
-                            </div>
-                            </br>
-
-                        </div>
-                    </div>
-
-                    <div class="form-group" id="perc">
-                        <h4>Percentage Correct</h4>
-                    </div>
-
-
-
-                </div>
-
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" href="quiz.html">Retry</button>
-                    <button type="button" class="btn btn-primary">Next Quiz!</button>
-                </div>
-            </div>
-        </div>
     </div>
 
 </body>
