@@ -1,3 +1,6 @@
+$(document).ready(function(){
+    nextQuestion()
+});
 //only allows one checkbox option to be selected
 $('input[type="checkbox"]').on('change', function () {
     $(this).siblings('input[type="checkbox"]').prop('checked', false);
@@ -47,4 +50,13 @@ function viewResults() {
 
 for (var i = 0; i < correctArr.length; i++) {
     $("#correct").append("<p>" + correctArr[i] + "</p>")
+}
+
+function nextQuestion(){
+    $("#questionText").append("<p>Test12345</p>")
+    $("#nextButton").click(function(){
+        $("#questionText").empty();
+        $("#questionOption").empty();
+        $("#questionText").append("<p>oh next question!</p>")
+    })
 }
