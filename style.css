@@ -15,7 +15,7 @@ body{
 }
 
 /*FOOTER*/
-section {
+#footer {
     padding: 60px 0;
     margin-top: 500px;
 }
@@ -90,4 +90,23 @@ section .section-title {
 }
 }
 /*FOOTER*/
+/*for the profile picture in index.html*/
+#profile{
+    margin-bottom:10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/*text over the image in index.html*/
+.bottom-left{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+/*background image for index.html*/
+#background-index{
+ box-shadow: inset 0 0 0 750px rgba(0,0,0,.2)
+}
+
 
